@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+/* ============================================================
+   テーマ変数（v4 では tailwind.config.js ではなく、ここに書く）
+
+   @theme に --color-<名前> を定義すると、その名前の
+   bg-* / text-* / border-* / ring-* / from-* ... が自動で生える。
+   bg-matcha-500/40 のような不透明度指定もそのまま使える。
+
+   名前空間の対応:
+     --color-*   → bg-*, text-*, border-* ...
+     --font-*    → font-*
+     --text-*    → text-*（文字サイズ）
+     --radius-*  → rounded-*
+     --spacing   → p-*, m-*, gap-* ... の1単位
+   ============================================================ */
+@theme {
+  /* --- 単色（段階なし）: bg-brand / text-ink のように使う --- */
+  --color-brand: oklch(0.55 0.19 253); /* コーポレートカラー */
+  --color-accent: oklch(0.72 0.19 60); /* 差し色の橙 */
+  --color-ink: oklch(0.25 0.02 260); /* 墨色（本文用の黒） */
+  --color-paper: oklch(0.98 0.008 90); /* 生成り（背景用の白） */
+
+  /* --- 段階つき: bg-matcha-100 〜 bg-matcha-950 が生える --- */
+  --color-matcha-50: oklch(0.97 0.02 130);
+  --color-matcha-100: oklch(0.94 0.045 130);
+  --color-matcha-200: oklch(0.89 0.08 130);
+  --color-matcha-300: oklch(0.82 0.12 130);
+  --color-matcha-400: oklch(0.74 0.16 130);
+  --color-matcha-500: oklch(0.66 0.17 130);
+  --color-matcha-600: oklch(0.56 0.15 130);
+  --color-matcha-700: oklch(0.46 0.12 130);
+  --color-matcha-800: oklch(0.38 0.09 130);
+  --color-matcha-900: oklch(0.32 0.07 130);
+  --color-matcha-950: oklch(0.22 0.05 130);
+
+  --color-sakura-50: oklch(0.97 0.015 350);
+  --color-sakura-100: oklch(0.94 0.03 350);
+  --color-sakura-200: oklch(0.9 0.06 350);
+  --color-sakura-300: oklch(0.84 0.1 350);
+  --color-sakura-400: oklch(0.76 0.14 350);
+  --color-sakura-500: oklch(0.7 0.17 350);
+  --color-sakura-600: oklch(0.61 0.18 350);
+  --color-sakura-700: oklch(0.52 0.16 350);
+  --color-sakura-800: oklch(0.43 0.13 350);
+  --color-sakura-900: oklch(0.37 0.1 350);
+  --color-sakura-950: oklch(0.24 0.07 350);
+
+  /* --- 色以外の例 --- */
+  --font-display: "Hiragino Sans", "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
+  --radius-card: 1.25rem; /* rounded-card */
+}
