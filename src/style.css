@@ -54,4 +54,7 @@
 .optional{
   color: aqua;
   font-size: 95px;
+  font-display: "Noto Sans JP";
+  font-weight: bold;
+  font-style:italic;
 }
