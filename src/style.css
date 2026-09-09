@@ -50,3 +50,8 @@
   --font-display: "Hiragino Sans", "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
   --radius-card: 1.25rem; /* rounded-card */
 }
+
+.optional{
+  color: aqua;
+  font-size: 95px;
+}
